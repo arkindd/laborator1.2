@@ -21,8 +21,8 @@ public class JFrame extends javax.swing.JFrame {
         Data_manipulation dm = new Data_manipulation();
         Excel_names provider = new Excel_names();
 
-        provider.run_for_names("/Users/danielaarkind/Desktop/second_names.xlsx");
-        provider.run_for_courses("/Users/danielaarkind/Desktop/courses.xlsx");
+        provider.run_for_names("src/main/resources/second_names.xlsx");
+        provider.run_for_courses("src/main/resources/courses.xlsx");
 
         return dm.Data_manipulation(provider);
     }
